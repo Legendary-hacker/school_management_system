@@ -1,0 +1,904 @@
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0);
+:root{
+    --clr-black:rgb(0, 0, 0);
+    --clr-primary:#7380ec;
+    --clr-danger:#ff7782;
+    --clr-Success:#41f1b6;
+    --clr-white:#fff;
+    --clr-info-dark:#7d8da1;
+    --clr-info-light:#dce1eb;
+    --clr-cream: #f5f5dc;
+    --clr-dark:#364939;
+    --clr-warning:#ec737f;
+    --clr-light:rgb(132,139,200,0.18);
+    --clr-primary-variant:#111e88;
+    --clr-dark-variant:#677483;
+    --clr-color-background:#ecf0f1;
+    --clr-color-dark-background:#34495e;
+
+}
+/* home page */
+
+/* end */
+*{
+    color: b;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    list-style: none;
+    appearance: none;
+    outline: none; border:none;
+    text-decoration: none;
+}
+.AdminBd{
+    font-family:'poppins',sans-serif;
+    width: 100vw;
+    height: 100vh;  
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: none;
+    background-color: var(--clr-color-background);
+}
+/* Admin Page */
+.AdminCon{
+    display: grid;
+    grid-template-columns: 15rem auto ;
+    width: 100vw;
+    gap: 1.8rem;
+}
+.asAdmin{
+    width: 250px;
+    background-color: var(--clr-color-dark-background);
+    color: var(--clr-color-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.AdminSb{
+    width: 250px;
+    background-color: var(--clr-color-dark-background);
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+.AdminSb nav a span.material-symbols-outlined {
+    font-size: 24px;
+    margin-right: 15px;
+}
+aside .h3{
+    font-size: 0.87rem;
+}
+aside .AdminSb a{
+    display: flex;
+    color: var(--clr-white);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    height: 3.2rem;
+    transition: all 0.2s ease;
+}
+aside .AdminSb a span{
+    font-size: 1.6rem;
+    transition: all 0.2s ease;
+}
+aside .AdminSb a:last-child{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+aside .AdminSb a.active{
+    background-color: var(--clr-color-dark-background);
+    color:var(--clr-white);
+    margin-left: 0;
+    /* border-left: 3px solid var(--clr-primary); */
+}
+aside .AdminSb a.active::before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background-color: var(--clr-white);
+    
+}
+aside .AdminSb a:hover{
+    color: var(--clr-white);
+}
+aside .AdminSb a:hover span{
+    margin-left: 1rem;
+}
+/* End of Admin Aside section */
+
+/* Admin Main Section */
+.AdminMain{
+    margin-top: 1.4rem;
+    width: 99%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.AdminMain .pas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.3rem;
+}
+.AdminMain .pas>div{
+    background-color: var(--clr-white);
+    padding: 1.8rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    box-shadow: 0 2rem 3rem var(--clr-white) ;
+    transition: all 1s ease-out;
+}
+.AdminMain .pas>div:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.AdminMain .pas>div span{
+    background-color: #7d8da1;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--clr-white);
+    font-size: 2rem;
+}
+.AdminMain .pas>div.stat span{
+    background-color: salmon;
+}
+.AdminMain .pas>div.ter span{
+    background-color: rgb(97, 203, 97);
+}
+.AdminMain .pas > div .att{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.AdminMain .pas>div .att h1{
+    color: var(--clr-dark);
+}
+.AdminMain .pas h1{
+    color: var(--clr-dark);
+}
+.AdminMain .pas h3{
+    color: var(--clr-dark);
+}
+.AdminMain .pas p{
+    color: var(--clr-dark);
+}
+.AdminMain .pas .pro{
+    position: relative;
+    height: 68px;
+    width: 67px;
+    border-radius: 50px; 
+}
+.AdminMain .pas svg{
+    height: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+
+}
+.AdminMain .pas svg circle{
+    fill: none;
+    stroke: var(--clr-primary);
+    stroke-width: 5;
+    transform: rotate(270,80,80);
+}
+.AdminMain .pas .pef svg circle {
+  stroke-width: 5;
+  fill: none;
+  transition: stroke-dashoffset 0.6s ease;
+  stroke-dashoffset: 220;
+}
+.AdminMain .pas .stat svg circle{
+    stroke-dashoffset: 10;
+    stroke-dasharray: 100;
+    transition: stroke-dashoffset 1s ease;
+}
+.AdminMain .pas .ter svg circle{
+    stroke-dashoffset: 10;
+    stroke-dasharray: 150;
+}
+.AdminMain .pas .ter svg circle{
+    stroke:rgb(97, 203, 97);
+}
+.AdminMain .pas .stat svg circle{
+    stroke: salmon;
+}
+.AdminMain .pas .pef svg circle{
+    stroke: #7d8da1;
+}
+.AdminMain .pas .pro .num{
+    position: absolute;
+    top: 8%;
+    left: 45%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-items: center; 
+    align-items: center;
+}
+/* Performing student table */
+.AdminMain .beStu{
+    margin-top: 2rem;
+    overflow: scroll;
+    height: 30rem;
+}
+.AdminMain .beStu h1{
+    color: var(--clr-dark);
+}
+.AdminMain .beStu table{
+    background-color: var(--clr-white);
+    width: 100%;
+    border-radius: 2rem;
+    padding: 1.8rem;
+    text-align: center;
+    box-shadow: 0 2rem 3rem var(--clr-white) ;
+    transition: all 1s ease;
+    color: var(--clr-dark);
+}
+.AdminMain .beStu:hover{
+    box-shadow: none;
+}
+.AdminMain table tbody tr{
+    height: 3.8rem;
+    border-bottom: 1px solid var( --clr-white);
+    color: var(--clr-dark-variant);
+    
+}
+.AdminMain table tbody td{
+    height: 3.8rem;
+    border-bottom:1px solid var(--clr-dark);
+}
+.AdminMain table tbody tr:last-child td{
+    border: none;
+}
+.AdminMain table tbody tr:nth-child(even){
+    background-color: rgb(247, 247, 252);
+}
+.AdminMain table thead tr{
+    font-size: 16px ;
+
+}
+.AdminMain table thead{
+    font-size: 16px;
+    
+}
+.AdminMain table tbody tr:hover{
+    color: var(--clr-dark);
+    background-color: rgba(213, 214, 226, 0.18);
+}
+/* details button */
+.AdminMain table tbody tr .det:hover{
+    color: var(--clr-primary);
+    background-color: rgb(237, 238, 244);
+}
+.dashBoard{
+    width: 100%;
+    box-shadow:  2 6px 10px rgba(0, 0, 0, 0.2);
+}
+#schoolMan{
+    height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+/* End detail button */
+
+/* Importing Google Font - Montserrat */
+.tbody {
+  align-items: center;
+  height: 100vh;
+  width: 100vb;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Parents & students Portal */
+
+aside .h3{
+    font-size: 0.87rem;
+}
+aside .porSb a{
+    display: flex;
+    color: var(--clr-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    height: 3.2rem;
+    transition: all 1s ease-in;
+}
+aside .porSb a span{
+    font-size: 1.6rem;
+    transition: all 0.35s ease-in;
+}
+aside .porSb a.active{
+  background-color: var(--clr-light);
+  color:var(--clr-primary) ;
+  margin-left: 0;
+    
+}
+aside .porSb a.active::before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background-color: var(--clr-primary);
+}
+aside .porSb a:hover{
+    color: var(--clr-primary);
+}
+aside .porSb a:hover span{
+    margin-left: 1rem;
+}
+u h2{
+    text-align:center ;
+}
+
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/* TEACHERS PORTAL */
+.teachCon{
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: 14rem auto ;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1.8rem;
+}
+.asTeach{
+    height: 100vh;
+}
+.teachSb{
+    width: 250px;
+    background-color: var(--clr-color-dark-background);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    
+}
+aside .h3{
+    font-size: 0.87rem;
+}
+aside .teachSb a{
+    display: flex;
+    color: var(--clr-info-light);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    height: 3.2rem;
+    transition: all 0.2s ease;
+}
+aside .teachSb a span{
+    font-size: 1.6rem;
+    transition: all 0.2s ease-in;
+}
+aside .teachSb a.active{
+    background-color: var(--clr-light);
+    color:var(--clr-white) ;
+    margin-left: 0;
+}
+aside .teachSb a.active::before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background-color: var(--clr-white);
+}
+aside .teachSb a:hover{
+    color: var(--clr-cream);
+}
+aside .teachSb a:hover span{
+    margin-left: 1rem;
+}
+.main{
+    display: grid;
+    grid-area: span;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    height: 103vh;
+    overflow: scroll;
+}
+.main-top{
+    display: flex;
+    width: 100%;
+}
+.main-top i{
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+    color: rgb(110, 109, 109);
+    cursor: pointer;
+    color: var(--clr-black);
+}
+.main .users{
+    display: flex;
+    width: 100%;
+    color: var(--clr-black);
+}
+.users .card{
+    width: 25%;
+    margin: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--clr-color-dark-background);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+  .users .card img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  .users .card h4{
+    text-transform: uppercase;
+    color: var(--clr-color-dark-background);
+  }
+  .users .card p{
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: var(--clr-black);
+  }
+.users table{
+    margin:  auto;
+  }
+.users .per span{
+    padding: 5px;
+    border-radius: 10px;
+    background: rgb(223, 223, 223);
+    color: var(--clr-black);
+}
+.users td{
+    font-size: 14px;
+    padding: 0px;
+}
+.users .card button{
+    width: 100%;
+    margin-top: 8px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid var(--clr-dark-variant);
+}
+.users .card button:hover{
+    background: var(--clr-color-dark-background);
+    color: #fff;
+    transition: 0.5s;
+  }
+  
+  /*Attendance List section  */
+  .attendance{
+    margin-top: 20px;
+    text-transform: capitalize;
+  }
+  .attendance-list{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+  .attendance-list h1{
+    position: static;
+  }
+
+  .table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+  }
+  .table thead tr{
+    color: var(--clr-white);
+    background: var(--clr-color-dark-background);
+    text-align: left;
+    font-weight: bold;
+  }
+  .table th,
+  .table td{
+    text-align: center;
+    padding: 12px 15px;
+  }
+  .table tbody tr{
+    
+    border-bottom: 1px solid #ddd;
+  }
+  .table tbody tr:nth-of-type(odd){
+    background: #f3f3f3;
+  }
+  .table tbody tr.active{
+    font-weight: bold;
+    color: var(--clr-color-dark-background);
+  }
+  .table tbody tr:last-of-type{
+    border-bottom: 2px solid var(--clr-color-dark-background);
+  }
+  .table button{
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid var(--clr-color-dark-background);
+  }
+  
+  .table button:hover{
+    background: var(--clr-color-dark-background);
+    color: var(--clr-white);
+    transition: 0.5rem;
+}
+#add-student-btn, #add-student-form button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: var(--clr-color-dark-background);
+    color: var(--clr-white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-student-btn:hover, #add-student-form button:hover {
+    background-color: var(--clr-color-dark-background);
+}
+
+#add-student-form {
+    margin-bottom: 20px;
+}
+
+#add-student-form input ,#teacher-subject,
+#teacher-class{
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid var(--clr-color-dark-background);
+    width: calc(20% - 24px); /* Subtracting padding and border */
+}
+
+.hidden {
+    display: none;
+}
+
+/* styles.css */
+
+
+.SchoolMan-Con {
+    display: flex;
+    height: 100vh;
+}
+
+.asSchool-management {
+    width: 350px;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.SchoolMan-Sb {
+    width: 100%;
+}
+
+.SchoolMan-Sb nav a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    transition:  all 0.3s ease ;
+}
+.SchoolMan-Sb nav a span{
+    font-size: 1.6rem;
+    transition: all 0.5s ease;
+}
+.SchoolMan-Sb nav a:last-child{
+    position: absolute;
+    bottom: 1rem;
+    width: 230px;
+}
+
+.SchoolMan-Sb nav a:hover, .SchoolMan-Sb nav a.active {
+    background-color: #34495e;
+    margin-left: 0.5rem;
+}
+.SchoolMan-Sb nav a.active::before{
+    content: "";
+    width: 6px;
+    color: var(--clr-white);
+    height: 100%;
+}
+
+.SchoolMan-Sb nav a span.material-symbols-outlined {
+    font-size: 20px;
+    margin-right: 15px;
+}
+.SchoolMan-Sb nav a:hover span{
+    font-size: 15px;
+    margin-left: 2rem;
+}
+
+.SchoolMan-Sb h3 {
+    margin: 0;
+}
+
+
+
+
+
+/* Login page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--clr-color-dark-background);
+    background-size: cover;
+    background-position: center;
+  }
+  .wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid var(--clr-info-dark);
+    backdrop-filter: blur(9px);
+    color: var(--clr-color-dark-background);
+    border-radius: 12px;
+    padding: 30px 40px;
+  }
+  .wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    color: var(--clr-color-dark-background);
+  }
+  .wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+    margin: 30px 0;
+  }
+  .input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid var(--clr-color-dark-background);
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--clr-black);
+    padding: 20px 45px 20px 20px;
+  }
+  .input-box input::placeholder{
+    color: var(--clr-dark-variant);
+  }
+  .input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+  
+  }
+  .wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+  }
+  .remember-forgot label input{
+    border: 2px solid var(--clr-color-dark-background);
+    padding: 5px;
+    background-color: var(--clr-white);
+    margin-right: 3px;
+  }
+  .remember-forgot label input:checked{
+    background-color: var(--clr-color-dark-background);
+  }
+
+  .remember-forgot a{
+    color: var(--clr-info-dark);
+    text-decoration: none;
+  
+  }
+  .remember-forgot a:hover{
+    text-decoration: underline;
+  }
+  .wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: var(--clr-color-dark-background);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--clr-white);
+    font-weight: 600;
+  }
+  .wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+  
+  }
+  .register-link p a{
+    color: var(--clr-info-dark);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .register-link p a:hover{
+    text-decoration: underline;
+  }
+
+  /* Register */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--clr-color-dark-background);
+    background-size: cover;
+    background-position: center;
+  }
+  .wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid var(--clr-info-dark);
+    backdrop-filter: blur(9px);
+    color: var(--clr-color-dark-background);
+    border-radius: 12px;
+    padding: 30px 40px;
+  }
+  .wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    color: var(--clr-color-dark-background);
+  }
+  .wrapper .reg-input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+    margin: 30px 0;
+  }
+  .reg-input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid var(--clr-color-dark-background);
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--clr-black);
+    padding: 20px 45px 20px 20px;
+  }
+  .reg-input input::placeholder{
+    color: var(--clr-dark-variant);
+  }
+  .reg-input i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+  
+  }
+  .wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+  }
+  .remember-forgot label input{
+    border: 2px solid var(--clr-color-dark-background);
+    padding: 5px;
+    background-color: var(--clr-white);
+    margin-right: 3px;
+  }
+  .remember-forgot label input:checked{
+    background-color: var(--clr-color-dark-background);
+  }
+
+  .remember-forgot a{
+    color: var(--clr-info-dark);
+    text-decoration: none;
+  
+  }
+  .remember-forgot a:hover{
+    text-decoration: underline;
+  }
+  .wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: var(--clr-color-dark-background);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--clr-white);
+    font-weight: 600;
+  }
+  .wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+  
+  }
+  .register-link p a{
+    color: var(--clr-info-dark);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .register-link p a:hover{
+    text-decoration: underline;
+  }
+
+
+  /* slider */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    background: linear-gradient(45deg, var(--clr-color-dark-background), var(--clr-dark-variant));
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card h3 {
+    margin-top: 0;
+}
+.card p {
+    margin: 10px 0;
+}
+.card .teacher {
+    font-weight: bold;
+}
